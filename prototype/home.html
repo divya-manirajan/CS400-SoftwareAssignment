@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
     <head>
         <script>
             function newDoc(){
@@ -9,31 +10,36 @@
         </script>
         <meta name = "viewport" content= "width=device-width, initial-scale=1">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
+
+    <style>
             body{
                 font-family:Arial, Helvetica, sans-serif;
+                background-color:antiquewhite;
+                height:auto;
                 margin: 0;
+                height: 100%;
             }
-
+            .menu{
+                position: fixed;
+                width: 100%;
+                height: 20px;
+            }
             .navbar{
                 overflow: hidden;
-                background-color: #333;
+                background-color:green;
             }
-
             .navbar a{
                 float:left;
-                font-size: 16px;
+                font-size: 24px;
                 color:white;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
             }
-
             .subnav{
                 float: left;
                 overflow: hidden;
             }
-
             .subnav .subnavbtn{
                 font-size: 16px;
                 border: none;
@@ -43,62 +49,85 @@
                 background-color: inherit;
                 font-family: inherit;
                 margin: 0;
-
             }
-
             .navbar a:hover, .subnav:hover
             .subnavbtn{
-                background-color: red;
-            
+                background-color:darkgreen;
             }
-
             .subnav-content{
                 display: none;
                 position: absolute;
                 left: 0;
-                background-color: red;
+                background-color:darkgreen;
                 width: 100%;
                 z-index: 1;
             }
-
             .subnav-content a{
+                font-size: 16px;
                 float: left;
                 color: white;
                 text-decoration: none;
-            
             }
-
             .subnav-content a:hover{
                 background-color: #eee;
                 color: black;
-
             }
-
             .subnav:hover .subnav-content{
                 display:block;
             }
-        </style>
+            .page{ 
+                background-color:antiquewhite;
+                height:1000px;
+                overflow-y: scroll;
+            }
+            .photo{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            .homepage{
+                padding: 100px;
+            }
+
+
+    </style>
     </head>
+
+
 <body>
 
-
-<div class = "navbar">
-        <div class = "subnav">
-            <button class= "subnavbtn">Home <i class = "fa fa-caret-down"</i></button>
-            <div class = "subnav-content">
-                <a href = "http://localhost:8001/">Create an Event</a>
-                <a href = "#searchevent">See Events</a>
+    <div class = "menu">
+        <div class = "navbar">
+            <a href = "home.html">SportsLink</a>
+            <div class = "subnav">
+                <button class= "subnavbtn">Events <i class = "fa fa-caret-down"</i></button>
+                        <div class = "subnav-content">
+                            <a href = "createEvent.html">Create an Event</a>
+                            <a href = "#searchevent">See Events</a>
+                        </div>
             </div>
-        </div>
-    <a href = "#about">About</a> 
-        <div class ="subnav">
-            <button class = "subnavbtn">My Profile <i class = "fa fa-caret-down"</i></button>
-            <div class = "subnav-content">
-                <a href = "#viewprofile">View Profile</a>
-                <a href = "http://localhost:8002/">Create an Account</a>
-                
+            <div class ="subnav">
+                    <button class = "subnavbtn">My Profile <i class = "fa fa-caret-down"</i></button>
+                        <div class = "subnav-content">
+                            <a href = "#viewprofile">View Profile</a>
+                            <a href = "createUser.html">Create an Account</a>
+                        </div>
             </div>
 </div>
-    
+
+    <div class = "page">
+    <img src = "soccer.jpg" alt = Soccer! class = "photo" align = "middle">
+
+    <div class = "homepage">
+        <h1>Welcome to SportsLink!</h1>
+        <p>SportsLink is designed to help users find and create local pickup games around their community. Whether you are looking to get in shape, meet new people, try new sports, or just do what you love, SportsLink has features that will help you create the best experience</p>
+    </div>
+    </div>
+
 </body>
 </html>
+
+<p>
+    http://localhost:8002/ create account, http://localhost:8001/ create event
+</p>
