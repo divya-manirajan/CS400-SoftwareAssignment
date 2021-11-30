@@ -11,7 +11,7 @@ http.createServer(function(req, res){
 console.log("Server started on localhost:8000");
 
 http.createServer(function(req, res){
-    fs.readFile("createEvent.html",function (err, data){
+    fs.readFile("eventForm.html",function (err, data){
         res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
         res.write(data);
         res.end();
