@@ -1,5 +1,12 @@
 {
-    "scripts": {
-      "test": "jest"
-    }
-  }
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "name": "prototype",
+  "version": "1.0.0",
+  "main": "functions.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
