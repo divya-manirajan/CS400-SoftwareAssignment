@@ -18,6 +18,7 @@ SEA_03: Developing a Software Architecture
     
 SEA_04: Developing a Prototype and Portfolio
     For our final phase of this project we have decided to create a website that implements two of our minimum viable products -- creating events and creating user profiles. The website includes a navigation bar with tabs “Home”, “Events”, “About”, and “Profile”. For the prototype, we decided to skip the implementation MySQL, PHP, and other technologies listed in SEA_03 for simplicity.
+    
   The website was created using HTML, styled with CSS, and functions with JavaScript. We incorporated several JavaScript mechanisms in our code, including functions for minimum character length, checking for the ‘@’ symbol in email fields, etc. For the create event form, we included a table using JavaScript that prints out the user input which tests functionality and also allows the user to double check their information.
   
   
@@ -26,8 +27,11 @@ Instructions on Building and Running Application:
   Clone repository.
   Enter: cd .\CS400-SoftwareAssignment\prototype\
   Enter: docker build -t prototype:v1 .  
+  
   Enter: docker run -dp 8000-8003:8000-8003 prototype:v1
+  
   Enter: docker ps
+  
   Visit: http://localhost:8000/
 
 Instructions for Running Unit Tests:
