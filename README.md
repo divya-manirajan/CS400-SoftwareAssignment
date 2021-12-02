@@ -21,18 +21,20 @@ SEA_04: Developing a Prototype and Portfolio
     
   The website was created using HTML, styled with CSS, and functions with JavaScript. We incorporated several JavaScript mechanisms in our code, including functions for minimum character length, checking for the ‘@’ symbol in email fields, etc. For the create event form, we included a table using JavaScript that prints out the user input which tests functionality and also allows the user to double check their information.
   
-  
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Instructions on Building and Running Application:
 
-  Clone repository.
-  Enter: cd .\CS400-SoftwareAssignment\prototype\
-  Enter: docker build -t prototype:v1 .  
+        Clone repository.
+        
+        Enter: cd .\CS400-SoftwareAssignment\prototype\
+        
+        Enter: docker build -t prototype:v1 .  
   
-  Enter: docker run -dp 8000-8003:8000-8003 prototype:v1
+        Enter: docker run -dp 8000-8003:8000-8003 prototype:v1
   
-  Enter: docker ps
+        Enter: docker ps
   
-  Visit: http://localhost:8000/
+        Visit: http://localhost:8000/
 
 Instructions for Running Unit Tests:
     Run on docker CLI for prototype:v1 : npm run test
