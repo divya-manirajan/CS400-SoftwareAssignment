@@ -38,6 +38,14 @@ Instructions on Building and Running Application:
 
 Instructions for Running Unit Tests:
     Run on docker CLI for prototype:v1 : npm run test
+    
+Instructions for pulling from Docker Hub:
+    Enter: docker pull camh203/cs400-software_assignment:v1
+    Enter: docker build -t camh203/cs400-software_assignment:v1 .
+    Enter: docker run -dp 8000-8003:8000-8003 camh203/cs400-software_assignment:v1
+    Enter: docker ps
+    Visit: http://localhost:8000/
+    
 
 Prototype:
     The prototype consists of several html files, including home.html which serves as the home page (index.html) that points to other html files in the project by use of a navigation bar. There is a server.js file which is used to run the web pages from local hosts. It includes a single file that contains all JavaScript functions, function.js, which were then tested using Jest. The Dockerfile builds the image for the web page, which is run on 4 local ports.
